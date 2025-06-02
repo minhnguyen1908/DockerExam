@@ -2,7 +2,10 @@ FROM drupal:latest
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends git && \
-    rm -rf /var/lig/apt/list/*
+    composer require 'drupal/jquery_ui:^1.7' && \
+    composer require 'drupal/jquery_ui_draggable:^2.1' && \
+    composer require 'drupal/jquery_ui_resizable:^2.1' && \
+    rm -rf /var/lig/apt/lists/*
 
 WORKDIR /var/www/html/themes
 

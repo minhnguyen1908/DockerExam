@@ -74,3 +74,10 @@ RUN drush cache:rebuild
 9.  **`USER www-data` / `RUN drush cache:rebuild`**: It's good practice to switch to the `www-data` user to run `drush` commands, as this mirrors how the web server will interact with Drupal. Clearing the cache is essential after adding new themes or modules for Drupal to recognize them.
 
 Remember to replace placeholders like `your_theme_name`, `https://git.drupalcode.org/project/bootstrap.git`, and the exact `git checkout` version with your actual theme details.
+
+---
+
+# 1. Missing libraries for bootstrap themes 8.x-3.x
+[JQuery UI](https://www.drupal.org/project/jquery_ui)
+[JQuery UI Draggable](https://www.drupal.org/project/jquery_ui_draggable)
+[JQuery UI Resizable](https://www.drupal.org/project/jquery_ui_resizable)
