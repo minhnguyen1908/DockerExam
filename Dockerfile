@@ -5,7 +5,7 @@ RUN apt-get update && \
     composer require 'drupal/jquery_ui:^1.7' && \
     composer require 'drupal/jquery_ui_draggable:^2.1' && \
     composer require 'drupal/jquery_ui_resizable:^2.1' && \
-    rm -rf /var/lig/apt/lists/*
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /var/www/html/themes
 
